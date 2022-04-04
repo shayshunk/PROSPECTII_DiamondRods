@@ -1,0 +1,14 @@
+# Macro file for example PII
+#
+# Verbosity
+/process/em/verbose 0
+/process/had/verbose 0
+
+# Initialize kernel
+/run/initialize
+
+# Distribution
+/PII/generator/distribution 2
+
+# Files
+/PII/output/files 1
