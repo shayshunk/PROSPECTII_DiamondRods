@@ -191,7 +191,7 @@ void PIIDetectorConstruction::DefineMaterials()
   G4double Reflectivity3[nE]    = { 1, 1, 1 };
   G4double RefractiveIndex3[nE] = { 1.34, 1.34, 1.34 };
   G4double Efficiency3[nE]      = { 0.0, 0.0, 0.0 };
-  G4double SpecularLobe3[nE]    = { 0.02, 0.02, 0.02 };
+  G4double SpecularLobe3[nE]    = { 0.0, 0.0, 0.0 };
   G4double SpecularSpike3[nE]   = { 0.98, 0.98, 0.98 };
   G4double Backscatter3[nE]     = { 0.0, 0.0, 0.0 };
 
@@ -215,9 +215,9 @@ void PIIDetectorConstruction::DefineMaterials()
   refMat->AddElement(elC, 1);
 
   // Light Guides
-  G4double LightGReflectivity3[nE]    = { 0.996, 0.995, 0.995 };
+  G4double LightGReflectivity3[nE]    = { 0.995, 0.995, 0.995 };
   G4double LightGEfficiency3[nE]      = { 0.0, 0.0, 0.0 };
-  G4double LightGSpecularLobe3[nE]    = { 0.01, 0.01, 0.01 };
+  G4double LightGSpecularLobe3[nE]    = { 0.0, 0.0, 0.0 };
   G4double LightGSpecularSpike3[nE]   = { 0.99, 0.99, 0.99 };
   G4double LightGBackscatter3[nE]     = { 0.0, 0.0, 0.0 };
 
@@ -241,7 +241,7 @@ void PIIDetectorConstruction::DefineMaterials()
   scintMat->AddElement(elH, 1);
 
   G4double rindex_sc[nE] = {1.55, 1.55, 1.55};
-  G4double absorption[nE] = {85*cm, 85*cm, 85*cm};
+  G4double absorption[nE] = {145*cm, 145*cm, 145*cm};
 
   G4MaterialPropertiesTable* ScintMPT = new G4MaterialPropertiesTable();
 
